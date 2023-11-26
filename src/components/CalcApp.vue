@@ -13,7 +13,7 @@
     <div @click="append('7')" class="btn fw-bold fs-2 text-center">7</div>
     <div @click="append('8')" class="btn fw-bold fs-2 text-center">8</div>
     <div @click="append('9')" class="btn fw-bold fs-2 text-center">9</div>
-    <div @click="times" class="btn operator bg-danger fs-2 text-center p-1">x</div>
+    <div @click="multiply" class="btn operator bg-danger fs-2 text-center p-1">x</div>
     <div @click="append('4')" class="btn fw-bold fs-2 text-center">4</div>
     <div @click="append('5')" class="btn fw-bold fs-2 text-center">5</div>
     <div @click="append('6')" class="btn fw-bold fs-2 text-center">6</div>
@@ -70,7 +70,7 @@ export default {
       this.operator = (a, b) => a / b;
       this.setPrevious();
     },
-    times() {
+    multiply() {
       this.operator = (a, b) => a * b;
       this.setPrevious();
     },
